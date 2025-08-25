@@ -15,7 +15,7 @@ It defines tables for managing **users, drivers, passengers, and bookings** with
 ### Database
 ```sql
 CREATE DATABASE jeeptransport;
-USE jeeptransport;
+USE jeeptransport; ```
 
 
 ## Tables
