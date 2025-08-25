@@ -2,42 +2,6 @@
 "ThapleJeep: Kaligandaki Corridor Transport Coordination System (KCTCS)"
 
 
-
-# 🚙 Jeep Transport Database (MariaDB/MySQL)
-
-This project contains the SQL schema for a **Jeep Transport Management System**, built using **MariaDB/MySQL**.  
-It defines tables for managing **users, drivers, passengers, and bookings** with proper relationships and constraints.  
-
----
-
-## 📂 Database Schema
-
-### Database
-```sql
-CREATE DATABASE jeeptransport;
-USE jeeptransport; ```
-
-
-## Tables
-### Users – Stores login and role info (admin, driver, passenger).
-### Drivers – Information about jeep drivers and vehicles.
-### Passengers – Passenger details and pickup locations.
-### Bookings – Links passengers and drivers with booking details.
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 # 🚙 Jeep Transport Database (MariaDB/MySQL)
 
 This project contains the SQL schema for a **Jeep Transport Management System**, built using **MariaDB/MySQL**.  
@@ -137,7 +101,7 @@ CREATE TABLE bookings (
 
 ```sql
 -- Add an admin user
-INSERT INTO users (username, password, role) VALUES ('admin1', 'adminpass', 'admin');
+INSERT INTO users (username, password, role) VALUES ('admin', 'admin123', 'admin');
 
 -- Add a driver
 INSERT INTO users (username, password, role) VALUES ('driver1', 'driverpass', 'driver');
@@ -147,7 +111,7 @@ VALUES (2, 'Ram Bahadur', 'BA-2-CHA-1234', '9800000000', 'Kathmandu');
 -- Add a passenger
 INSERT INTO users (username, password, role) VALUES ('passenger1', 'passpass', 'passenger');
 INSERT INTO passengers (user_id, name, contact, pickup_location) 
-VALUES (3, 'Sita Thapa', '9811111111', 'Pokhara');
+VALUES (3, 'Sita KC', '9811111111', 'Pokhara');
 
 -- Add a booking
 INSERT INTO bookings (passenger_id, driver_id, pickup_location, status) 
@@ -161,7 +125,7 @@ This project is open-source. You can use, modify, and share under the MIT Licens
 
 ---
 
-👨‍💻 Developed for **database learning and transport management system prototyping**.
+👨‍💻 Developed by **SANJEEV THAPA** for NOU 1sem 
 
 
 
