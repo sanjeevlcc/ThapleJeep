@@ -16,3 +16,23 @@ It defines tables for managing **users, drivers, passengers, and bookings** with
 ```sql
 CREATE DATABASE jeeptransport;
 USE jeeptransport;
+
+
+## Tables
+### Users – Stores login and role info (admin, driver, passenger).
+### Drivers – Information about jeep drivers and vehicles.
+### Passengers – Passenger details and pickup locations.
+### Bookings – Links passengers and drivers with booking details.
+
+
+
+
+
+
+
+
+
+
+
+
+
